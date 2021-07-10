@@ -2,7 +2,7 @@ const createHeader = (id, text) => {
     const header = document.createElement('header');
     header.setAttribute('id', id);
 
-    const logo = document.createElement('h1');
+    const logo = document.createElement('div');
     logo.textContent = text;
 
     header.appendChild(logo);
@@ -21,7 +21,6 @@ const createBtn = (id, text) => {
     btn.classList.add('tab');
 
     return btn;
-
 }
 
 const createNav = (id) => {
@@ -62,6 +61,7 @@ const initializeWebsite = () => {
     // Header
     const content = document.querySelector('#content');
     const header = createHeader('header', 'Restauration');
+    header.innerHTML = `<img src="./images/logo.png" alt="" />`
     content.appendChild(header);
 
     // Nav
