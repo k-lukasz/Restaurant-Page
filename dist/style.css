@@ -6,6 +6,15 @@
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+
 html{
     font-size: 10px;
     line-height: 1.5;
@@ -98,6 +107,37 @@ button {
     font-size: 2rem;
     color: #eee;
   }
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 4rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px 10px;
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
+.menu-item h2 {
+    padding: 2.5rem;
+}
+
+.menu-item p {
+    font-size: 1.7rem;
+}
 
 .button-nav.active {
     border-bottom: 2px solid #eee;
