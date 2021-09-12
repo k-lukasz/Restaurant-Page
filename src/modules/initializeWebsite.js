@@ -80,7 +80,7 @@ const createFooter = () => {
     copyright.textContent = 'Copyright © 2021 Me'
 
     const githubLink = document.createElement('a');
-    githubLink.href = 'https://github.com/siIas';
+    githubLink.href = 'https://github.com/k-lukasz';
 
     const githubIcon = document.createElement('i');
     githubIcon.classList.add('fab');
